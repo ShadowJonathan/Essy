@@ -7,7 +7,7 @@ Easy Static Site Hoster (ESSH, spoken "Essy")
 A personal site hosting platform, where you'd need nothing more than a web server, a browser,
 and some HTML coding skills, to create your own personal website.
 
-Essy works with Nginx, pointing it at the files and folders that you uploaded, and manages the rest for you :3
+Essy works with a reverse proxy, pointing it at the files and folders that you uploaded, and manages the rest for you :3
 
 ## Roadmap
 
