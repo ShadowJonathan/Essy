@@ -1,0 +1,26 @@
+{% extends "_base.html.j2" %}
+{% block title %}Files for {{ domain }}{% endblock %}
+{% block content %}
+    <h1>Files</h1>
+
+    <ul>
+    {% for file in files %}
+        <li>
+            <samp>{{ file }}</samp>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <h2>Upload</h2>
+
+    <form action="/form/file/{{ domain }}/upload" method="post" enctype="multipart/form-data">
+        <label for="directory">Directory:</label>
+        <input type="text" id="directory" name="directory" value="/"><br><br>
+
+        <label for="file_name">File name (optional):</label>
+        <input type="text" id="file_name" name="file_name"><br><br>
+
+        <input type="file" id="new_file" name="new_file" />
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}

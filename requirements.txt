@@ -1,0 +1,7 @@
+fastapi
+jinja2>=2.2
+python-multipart
+pydantic
+
+anyio
+starlette

@@ -1,0 +1,10 @@
+{% extends "_base.html.j2" %}
+{% block content %}
+    <ul>
+    {% for domain in domains %}
+        <li>
+            <a href="{{ url_for('domain_info', domain=domain) }}">{{ domain }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
