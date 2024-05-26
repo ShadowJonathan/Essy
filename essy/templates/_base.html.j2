@@ -7,6 +7,10 @@
     {% endblock %}
 </head>
 <body>
-    <div id="content">{% block content %}{% endblock %}</div>
+    <br>
+    <img class="header-logo" src="{{ url_for('static', path='/essy_logo.png') }}" alt="Essy Header Logo">
+    <div class="main">
+        {% block content %}{% endblock %}
+    </div>
 </body>
 </html>

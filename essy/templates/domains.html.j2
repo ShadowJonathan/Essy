@@ -1,9 +1,11 @@
 {% extends "_base.html.j2" %}
 {% block content %}
+    <a href="/">Back to Home Page</a>
+    <h1>Domains</h1>
     <ul>
     {% for domain in domains %}
         <li>
-            <a href="{{ url_for('domain_info', domain=domain) }}">{{ domain }}</a>
+            <a href="{{ url_for('domain_info', domain=domain) }}"><samp>{{ domain }}</samp></a>
         </li>
     {% endfor %}
     </ul>

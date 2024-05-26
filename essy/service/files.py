@@ -28,10 +28,13 @@ def real_path(domain: str, file_path: Union[str, Path]) -> Path:
 def files_for(domain: str) -> Iterator[str]:
     d_folder = domain_folder(domain).resolve()
 
+    # FIXME: this will maybe do weird stuff for windows
+    absolute_root = Path("/")
+
     for root, dirs, files in os.walk(d_folder):
         for file in files:
             path = Path(root) / file
-            yield str(path.relative_to(d_folder))
+            yield str(absolute_root / path.relative_to(d_folder))
 
 
 def delete_file(domain: str, path: str):

@@ -1,5 +1,7 @@
 {% extends "_base.html.j2" %}
 {% block title %}Domain info for {{ domain }}{% endblock %}
 {% block content %}
+    <a href="/domains">Back to Domains</a>
+    <h1>Domain: <samp>{{ domain }}</samp></h1>
     <a href="{{ url_for('domain_files', domain=domain) }}">files</a>
 {% endblock %}

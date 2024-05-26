@@ -1,0 +1,30 @@
+body {
+    width: 900px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'MS PGothic';
+
+    font-size: 16px;
+    background-image: url(/static/essy_bg.png);
+    color: #1645c9;
+
+}
+
+.main {
+    width: 500px;
+    border-radius: 5px;
+    border: 3px rgb(66, 142, 255) groove;
+    background-color: rgb(172, 222, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    padding: 5px;
+}
+
+img.header-logo {
+    height: 100px;
+    position: absolute;
+    left: 350px;
+}
